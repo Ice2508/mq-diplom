@@ -7,16 +7,15 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="wrapper">
-
-		<!--Popup-->
+	
+        <!--Popup-->
 
         <div class="hidden">
             <div class="popup-backdrop">
         	        <section class="popup-window">
-        		        <svg class="popup-close" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 441 441">
-        		        	<path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/>
-        		        </svg>
+        		       <button class="popup-close" type="button">	 <span class="visually-hidden">кнопка закрытия формы
+						  </span>
+					   </button>
         		        <div class="popup-title-wrap title-divider">
         		 	        <h2 class="popup-title">Ваш фидбек
         		 	        </h2>
@@ -54,21 +53,24 @@
 		<!--Шапка сайта-->
 
 		<header class="header">
+			<button class="mobile-nav" type="button">
+				<span class="visually-hidden">меню сайта
+			    </span>
+			</button>
 			<div class="wrap-logo-nav">
 				<div class="logo">
-					
-			       <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 3070 696">
-			       	   <desc>Иконка логотипа сайта</desc>
-                       <path fill="#B59F5B" d="M485.331 135.438V696h-3.762L105.343 353.643l3.762 319.784H0V112.865h3.7623L379.988 458.984l-3.762-323.546h109.105Z"/>
-                       <path fill="white" stroke="#E8E8E8" d="m861.808 165.967.009-.005.008-.005c41.291-26.275 86.341-37.543 138.935-37.543 52.58 0 93.88 11.261 138.94 37.548 41.32 26.295 75.13 60.101 101.42 101.42 26.28 41.293 37.55 86.343 37.55 135.169 0 48.823-11.27 93.882-37.56 138.948-26.28 45.059-60.08 75.103-101.42 101.409-41.29 26.275-86.34 37.543-138.93 37.543-48.821 0-93.878-11.263-138.943-37.548-41.335-26.305-75.126-56.348-101.41-101.404-26.287-45.063-37.551-86.355-37.554-138.927 3.76-45.089 15.032-93.909 37.553-135.204 26.304-41.331 56.348-75.12 101.402-101.401Zm-4.448 327.124c15.076 26.384 33.944 49.036 60.382 64.143 26.411 15.092 52.832 22.639 86.778 22.639 30.19 0 56.61-7.55 83.02-22.639 26.44-15.107 45.31-37.759 60.38-64.143 15.1-26.414 22.64-56.598 22.64-86.777 0-33.948-7.55-60.368-22.64-86.778-15.07-26.383-33.94-49.036-60.38-64.143-26.41-15.089-52.83-22.639-83.02-22.639-30.102 0-64.128 3.754-86.85 22.689l-.032.027c-22.552 18.793-45.184 37.652-60.278 64.066-15.095 26.415-22.639 56.598-22.639 86.778 0 30.179 7.544 60.363 22.639 86.777ZM1617.77 572.349h270.38v100.578h-371.46V135.938h363.94v100.578h-263.36v117.627h233.26v100.579h-233.26v117.627h.5ZM1834.67.5l-107.99 96.8162h-62.87L1723.39.5h111.28ZM2584.26 417.31l-176.42 247.736-168.89-232.691-.91-1.247v241.819h-100.58V114.453l269.97 386.201.41.574.41-.566 281.26-386.261v558.526h-104.34V416.036l-.91 1.274ZM3069.5 135.938v536.989h-104.34V135.938h104.34Z"/>
-                    </svg>
+				    <a href="index.html">
+			            <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 3070 696">
+			       	        <desc>Иконка логотипа сайта</desc>
+                            <path fill="#B59F5B" d="M485.331 135.438V696h-3.762L105.343 353.643l3.762 319.784H0V112.865h3.7623L379.988 458.984l-3.762-323.546h109.105Z"/>
+                            <path fill="white" stroke="#E8E8E8" d="m861.808 165.967.009-.005.008-.005c41.291-26.275 86.341-37.543 138.935-37.543 52.58 0 93.88 11.261 138.94 37.548 41.32 26.295 75.13 60.101 101.42 101.42 26.28 41.293 37.55 86.343 37.55 135.169 0 48.823-11.27 93.882-37.56 138.948-26.28 45.059-60.08 75.103-101.42 101.409-41.29 26.275-86.34 37.543-138.93 37.543-48.821 0-93.878-11.263-138.943-37.548-41.335-26.305-75.126-56.348-101.41-101.404-26.287-45.063-37.551-86.355-37.554-138.927 3.76-45.089 15.032-93.909 37.553-135.204 26.304-41.331 56.348-75.12 101.402-101.401Zm-4.448 327.124c15.076 26.384 33.944 49.036 60.382 64.143 26.411 15.092 52.832 22.639 86.778 22.639 30.19 0 56.61-7.55 83.02-22.639 26.44-15.107 45.31-37.759 60.38-64.143 15.1-26.414 22.64-56.598 22.64-86.777 0-33.948-7.55-60.368-22.64-86.778-15.07-26.383-33.94-49.036-60.38-64.143-26.41-15.089-52.83-22.639-83.02-22.639-30.102 0-64.128 3.754-86.85 22.689l-.032.027c-22.552 18.793-45.184 37.652-60.278 64.066-15.095 26.415-22.639 56.598-22.639 86.778 0 30.179 7.544 60.363 22.639 86.777ZM1617.77 572.349h270.38v100.578h-371.46V135.938h363.94v100.578h-263.36v117.627h233.26v100.579h-233.26v117.627h.5ZM1834.67.5l-107.99 96.8162h-62.87L1723.39.5h111.28ZM2584.26 417.31l-176.42 247.736-168.89-232.691-.91-1.247v241.819h-100.58V114.453l269.97 386.201.41.574.41-.566 281.26-386.261v558.526h-104.34V416.036l-.91 1.274ZM3069.5 135.938v536.989h-104.34V135.938h104.34Z"/>
+                        </svg>
+                    </a>
 				</div>
                  
                  <!--навигация--> 
 				
 				<nav class="nav">
-					<div class="mobile-nav" role="navigation">
-					</div>
 					<ul class="nav-list">
 						<li class="nav-item"><a href="#0">главная</a></li>
 						<li class="nav-item"><a href="#0">посты</a></li>
@@ -80,20 +82,13 @@
 				</nav>
 			</div>
 			<div class="site-title-wrap">
-				<div class="logo-mobile">
-					<svg xmlns="http://www.w3.org/2000/svg" class="logo-mobile-icon" viewBox="0 0 3070 696">
-					   <desc>Иконка логотипа сайта</desc>
-                       <path fill="#B59F5B" d="M485.331 135.438V696h-3.762L105.343 353.643l3.762 319.784H0V112.865h3.7623L379.988 458.984l-3.762-323.546h109.105Z"/>
-                       <path fill="white" stroke="#E8E8E8" d="m861.808 165.967.009-.005.008-.005c41.291-26.275 86.341-37.543 138.935-37.543 52.58 0 93.88 11.261 138.94 37.548 41.32 26.295 75.13 60.101 101.42 101.42 26.28 41.293 37.55 86.343 37.55 135.169 0 48.823-11.27 93.882-37.56 138.948-26.28 45.059-60.08 75.103-101.42 101.409-41.29 26.275-86.34 37.543-138.93 37.543-48.821 0-93.878-11.263-138.943-37.548-41.335-26.305-75.126-56.348-101.41-101.404-26.287-45.063-37.551-86.355-37.554-138.927 3.76-45.089 15.032-93.909 37.553-135.204 26.304-41.331 56.348-75.12 101.402-101.401Zm-4.448 327.124c15.076 26.384 33.944 49.036 60.382 64.143 26.411 15.092 52.832 22.639 86.778 22.639 30.19 0 56.61-7.55 83.02-22.639 26.44-15.107 45.31-37.759 60.38-64.143 15.1-26.414 22.64-56.598 22.64-86.777 0-33.948-7.55-60.368-22.64-86.778-15.07-26.383-33.94-49.036-60.38-64.143-26.41-15.089-52.83-22.639-83.02-22.639-30.102 0-64.128 3.754-86.85 22.689l-.032.027c-22.552 18.793-45.184 37.652-60.278 64.066-15.095 26.415-22.639 56.598-22.639 86.778 0 30.179 7.544 60.363 22.639 86.777ZM1617.77 572.349h270.38v100.578h-371.46V135.938h363.94v100.578h-263.36v117.627h233.26v100.579h-233.26v117.627h.5ZM1834.67.5l-107.99 96.8162h-62.87L1723.39.5h111.28ZM2584.26 417.31l-176.42 247.736-168.89-232.691-.91-1.247v241.819h-100.58V114.453l269.97 386.201.41.574.41-.566 281.26-386.261v558.526h-104.34V416.036l-.91 1.274ZM3069.5 135.938v536.989h-104.34V135.938h104.34Z"/>
-                    </svg>
-				</div>
 				<h1 class="site-title">блог о творчестве, спорте, и образе жизни</h1>
 			</div>
 		</header>
 
 		<!--Основной блок-->
 
-		<main class="main">
+		<div class="wrapper">
 
 			<!--Секция "сейчас в тренде"-->
 			
@@ -103,23 +98,20 @@
 				</div>
 				<div class="trendy-info">
 					<div class="trendy-card card1">
-						<span class="visually-hidden">цветы в горшках
-						</span>
 						<div class="trendy-text">
 							<ul class="trendy-text-list">
-								<li>Lifestyle</li>
-								<li>Interior</li>
+								<li><a href="#0">Lifestyle</a></li>
+								<li><a href="#0">Interior</a></li>
 							</ul>
 							<h3 class="trendy-text-title">
-								Сейчас в тренде: сад <br>на подоконнике
+								Сейчас в тренде: сад на подоконнике
 							</h3>
 						</div>
 					</div>
 					<div class="trendy-card card2">
-					    <span class="visually-hidden">разные сыры</span>
 					    <div class="trendy-text">
 							<ul class="trendy-text-list">
-								<li>food</li>
+								<li><a href="#0">food</a></li>
 							</ul>
 							<h3 class="trendy-text-title">
 								сыры на красивых картинках из интернета: какие они на вкус?
@@ -127,12 +119,10 @@
 						</div>
 					</div>
 					<div class="trendy-card card3">
-						<span class="visually-hidden">человек в горах
-						</span>
 						<div class="trendy-text">
 							<ul class="trendy-text-list">
-								<li>Lifestyle</li>
-								<li>travel</li>
+								<li><a href="#0">Lifestyle</a></li>
+								<li><a href="#0">travel</a></li>
 							</ul>
 							<h3 class="trendy-text-title">
 								собираемся в первый
@@ -141,12 +131,10 @@
 						</div>
 					</div>
 					<div class="trendy-card card4">
-						<span class="visually-hidden">лимоны
-						</span>
 						<div class="trendy-text">
 							<ul class="trendy-text-list">
-								<li>food</li>
-								<li>health</li>
+								<li><a href="#0">food</a></li>
+								<li><a href="#0">health</a></li>
 							</ul>
 							<h3 class="trendy-text-title">
 								Сейчас в тренде: сколько витамина с в лимонах?
@@ -159,7 +147,7 @@
 	            
                  <!--Статьи-->
 
-	            <div class="article-wrap">
+	            <main class="main">
 	            	<article class="article-card">
 	            		<div class="article-img">
 	            			<img src="images/last-post1.jpg" alt="красивая природа">
@@ -332,7 +320,7 @@
 	            			</div>
 	            		</div>
 	            	</article>						
-	            </div>
+	            </main>
 
 	            <!--Cайдбар-->
 
@@ -363,9 +351,9 @@
 	            			    </div>
 	            		    </div>
 	            		</div>
-	            		<div class="new-posts-details">
+	            	<div class="new-posts-details">
 	            			<div class="new-post-img">
-	            				<img src="images/151.jpg" alt="Йога">
+	            				<img src="images/45.jpg" alt="классное место">
 	            			</div>
 	            			<div class="new-post-text">
 	            			    <div class="new-post-data">
@@ -375,8 +363,9 @@
 	            			    </div>
 	            			    <div class="new-post-title">
 	            				    <h3>
-	            				    	<a href="#0">Йога для домашних
-	            				    	</a>
+	            				    	<a href="#0">
+	            				    		Йога для домашних 
+	            				    	</a>	
                                     </h3>
 	            			    </div>
 	            		    </div>
@@ -487,19 +476,20 @@
                 	<div class="section-title">
         				<h3 class="topics-title aside-title">Темы</h3>
         			</div>
-        			<div class="aside-topics-wrap">
-        			     <div class="aside-topic"><a class="aside-topic-link" href="#0">Красота</a><span class="aside-topic-number">12</span>
-        			     </div>
-        			     <div class="aside-topic"><a class="aside-topic-link" href="#0">Здоровье</a><span class="aside-topic-number">4</span>
-        			     </div>
-        			     <div class="aside-topic"><a class="aside-topic-link" href="#0">Образ жизни</a><span class="aside-topic-number">145</span></div>
-        			     <div class="aside-topic"><a class="aside-topic-link" href="#0">Музыка</a><span class="aside-topic-number">28</span>
-        			     </div>
-        			     <div class="aside-topic"><a class="aside-topic-link" href="#0">Спорт</a><span class="aside-topic-number">62</span>
-        			     </div>
-        			     <div class="aside-topic"><a class="aside-topic-link" href="#0">Йога</a><span class="aside-topic-number">8</span>
-        			     </div>
-        		    </div>
+        			<ul class="aside-topics-wrap">
+        			     <li class="aside-topic"><a class="aside-topic-link" href="#0">Красота</a><span class="aside-topic-number">12</span>
+        			     </li>
+        			     <li class="aside-topic"><a class="aside-topic-link" href="#0">Здоровье</a><span class="aside-topic-number">4</span>
+        			     </li>
+        			     <li class="aside-topic"><a class="aside-topic-link" href="#0">Образ жизни</a><span class="aside-topic-number">145</span>
+        			     </li>
+        			     <li class="aside-topic"><a class="aside-topic-link" href="#0">Музыка</a><span class="aside-topic-number">28</span>
+        			     </li>
+        			     <li class="aside-topic"><a class="aside-topic-link" href="#0">Спорт</a><span class="aside-topic-number">62</span>
+        			     </li>
+        			     <li class="aside-topic"><a class="aside-topic-link" href="#0">Йога</a><span class="aside-topic-number">8</span>
+        			     </li>
+        		    </ul>
                 </section>
             </aside>
         </div>
@@ -590,27 +580,26 @@
                     </div>
                 </div>	
             </section>
-		</main>
+		</div>
         
         <!--Подвал сайта-->
         
         <footer class="footer">
-        	<div class="footer-social">
-        		<div class="dribbble-wrap">
+        	<ul class="footer-social">
+        		<li class="dribbble-wrap">
         			<a href="#0" class="social-icon-link"><span class="visually-hidden">перейти в Dribbble</span>
         			</a>
-        		</div>
-        		<div class="pinterest-wrap">
+        		</li>
+        		<li class="pinterest-wrap">
         			<a href="#0" class="social-icon-link"><span class="visually-hidden">перейти в Pinterest</span></a>
-        		</div>
-        		<div class="tumblr-wrap">
+        		</li>
+        		<li class="tumblr-wrap">
         			<a href="#0" class="social-icon-link"><span class="visually-hidden">перейти в Tumblr</span></a>
-        		</div>
-        	</div>
+        		</li>
+        	</ul>
         	<div class="copyright">
         		<a href="#0">Copyright &#169; 2009–2019 City Blog LLC.</a>
         	</div>
         </footer>
-    </div>
-</body>
+    </body>
 </html>
